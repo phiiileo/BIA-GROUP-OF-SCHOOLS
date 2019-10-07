@@ -1,0 +1,50 @@
+#ourTeam {
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    font-style: italic;
+    color: green;
+    display: block;
+    margin: 0 auto;
+}
+
+#ourTeam h3 {
+    margin-bottom: 50px;
+    font-size: 1.5em;
+}
+
+#ourTeam article {
+    width: 400px;
+    height: 470px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border: 1px solid green;
+    box-shadow: 2px 2px 20px rgb(1, 54, 1);
+    text-align: center;
+    font-weight: 600;
+}
+
+#ourTeam section img {
+    width: 100%;
+    height: 400px;
+}
+
+
+@media screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    
+    #ourTeam section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #ourTeam article:nth-child(odd){
+        margin-left: 0px;
+    }
+    #ourTeam article {
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,609 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 500px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    color: white;
+    font-size: 1.5em;
+    padding: 13px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    z-index: 1;
+}
+
+#navButton:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.navButton {
+    width: 25px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.rotate45c {
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform:  rotate(45deg);
+    margin-top: 8px;
+}
+
+.rotate45a {
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -1px;
+}
+
+#navSchoolName {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    width: 200px;
+}
+
+#address {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    padding: 5px 20px 0 20px;
+    color: green;
+    border-bottom: 1px solid rgba(0, 128, 0, 0.5);
+    font-size: 1.3em;
+    height: 150px;
+}
+
+#biaLogo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#contact {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+#contact section {
+    margin-bottom: 10px;
+}
+
+#phonenumber span:first-child{
+    border: 1px solid green;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#phonenumber span:last-child {
+    display: none;
+}
+
+#email span:last-child {
+    font-size: 0.6em;
+    margin-bottom: 5px;
+}
+
+#socialMediaLinks a {
+    font-size: 1.2em;
+    margin-right: 15px;
+    border-radius: 50%;
+    padding: 5px 8px;
+    box-shadow: 1px 1px 3px grey;
+}
+#socialMediaLinks a:first-of-type {
+    color: white;
+    background-color: rgb(6, 82, 112);
+}
+.fa-twitter {
+    color: rgb(17, 120, 161);
+}
+
+#socialMediaLinks a:last-of-type {
+    color: white;
+    background-color: green;
+}
+
+#navBar {
+    width: 200px;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 50px;
+    background-color: white;
+    border-right: 1px solid green;
+    padding-left: 5px;
+    z-index: 1;
+}
+
+.navLink {
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0, 128, 0, 0.733);
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navLink a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.0em;
+    color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navLink a:hover {
+    color: white;    
+    text-decoration: none;
+    font-size: 1.0em;
+    background-color: rgba(0, 128, 0, 0.493);
+}
+
+.navLink article {
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.0em;
+    padding: 10px;
+}
+
+.navLink article:hover {
+    color: white;
+    padding:10px;
+    background-color: rgba(0, 128, 0, 0.493);
+}
+.dropdown-content {
+    display: none;
+}
+.dropdown-content a {
+    margin: 7px;
+    font-size: 0.7em;
+    width: 90%;
+}
+.dropdown-content a:hover {
+    font-size: 0.7em;
+
+}
+
+#carousel {
+    clear: both;
+    height: auto;
+    width: 100%;
+}
+
+#carousel #myCarousel img {
+    width: 100%;
+    height: auto;
+}
+
+#welcome {
+    margin-top: 30px;   
+    padding: 0 20px;
+    font-size: 1.3em;
+    text-align: center;
+    border-bottom: 1px solid rgb(5, 116, 5);
+}
+
+#welcome p:first-of-type {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+#ourCEO {
+    margin-top: 30px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#ourCEO h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+}
+
+#ourCEO  section{
+    width: 100%;
+    height: 120px;
+    text-align: right;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+#ourCEO img{
+    border-radius: 50%;
+    border: 2px dashed green;
+    width:130px;
+    height:130px;
+    z-index: 0;
+
+}
+#ourCEO section #txt {
+    font-weight: 200;
+    font-size: 0.7em;
+    opacity: 0.8;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    right: 140px;
+    bottom: 0px;
+}
+
+#ourCEO #txt1 {
+    font-size: 0.8em;
+}
+
+#ourCEO a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 0.8em;
+    color: black;
+    opacity: 0.7;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+#ourCEO a:hover {
+    color: white;
+    background-color: green;
+}
+
+
+#ourSchool {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#ourSchools .schools {
+    width: 100%;
+    min-height: 400px;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+
+#ourSchools .schools img {
+    width: 100%;
+    height: auto;
+
+}
+
+.schools h3, #ourFacilities h3, footer h2, footer h3  {
+    color: green;
+}
+.schools p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.0em;
+}
+
+.schools:hover{
+    opacity: 0.9;
+}
+#ourSchools .schools a {
+    text-decoration: none;
+    color: grey;
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    margin: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#ourSchools .schools a:hover {
+    background-color: rgb(5, 116, 5);
+    color: white;
+    opacity: 1;
+    box-shadow: 1px 1px 5px grey;
+}
+
+#ourFacilities {
+    background-image: url(../img/Elegant_Background-14.jpg);
+    background-attachment: fixed;
+    padding: 10px ;
+    padding-top: 5px;
+    font-size: 1.3em;
+}
+
+#ourFacilities h3 {
+    color: coral;
+}
+
+#ourFacilities li{
+    list-style-type: square;
+    list-style-position: inside;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#ourFacilities a {
+    border: 1px solid coral;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: coral;
+    list-style-type: none ;
+}
+
+footer  {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 10px;
+    background-image: url(../img/Elegant_Background-7.jpg);
+    background-attachment: fixed;
+    border-top: 1px solid green;
+}
+
+footer section:first-of-type {
+    height: 60px;
+}
+
+#addr {
+    font-size: 1.5em;
+}
+
+footer #mail {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#quickLinks {
+    margin-top: 60px;
+}
+
+footer #quickLinks a {
+    display: block;
+    margin: 15px 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+footer #quickLinks a:hover {
+    color: green;
+}
+
+.socialMediaLinks {
+    font-size: 1.3em;
+}
+
+.socialMediaLinks span {
+    color: green;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+#faq {
+    margin-bottom: -10px;
+    color: green;
+}
+
+#copywright {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    background-color:  green;
+    color: white;
+    text-align: center;
+}
+
+#copywright p {
+opacity: 0.8;
+margin: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    header {
+        display: none;
+    }
+
+    #address {
+        border-bottom: 1px solid rgba(0, 128, 0, 0.685);
+        margin-top: 45px;
+        font-size: 1.3em;
+    }
+
+    #biaLogo {
+        margin-top: 10px;
+        z-index: 1;
+    }
+
+    #phonenumber span:last-child {
+        display: inline;
+    }
+
+    #navBar {
+        display: block;
+        position: fixed;
+        top: 0;
+        padding: 0;        
+        border: none;
+        border-bottom: 0.5px dotted green;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        font-size: .9em;
+
+    }
+
+    #navBar .navLink {
+        min-width: 60px;
+        display: block;
+        border: none;
+        float: left;
+        text-align: center;
+        padding: 6px 0px;
+    }
+
+    .navLink article:hover {
+        font-size: 1.0em;
+    }
+
+    .navLink section {
+        background-color: white;
+        border: 1px solid green;
+        border-radius: 10px;
+        border-top: none;
+        margin-top: -10px;
+        z-index: 1;
+    }
+
+    .navLink section a {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+
+
+    #ourCEO p:nth-child(3){
+        column-count: 2;
+        padding-left: 10px;
+    }
+
+    #ourSchools{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+    #ourFacilities ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #quickLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #faq {
+        width: 200%;
+    }
+}
+
+
+
+@media screen and (min-width: 900px){
+
+    main {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+    }
+
+    #navBar {
+        font-size: 1.2em;
+        font-weight: lighter;
+    }
+
+    #navBar ul {
+        margin-top: -5px;
+        margin-right: 40px;
+    }
+
+    #address {
+        height: 125px;
+        margin-top: 50px;
+        font-size: 1.3em;
+    }
+
+    #contact section {
+        margin-bottom: 0px;
+        font-size: 1.2em;
+    }
+
+    #contact #location, #contact #phonenumber {
+        float: left;
+        width: auto;
+        margin-right: 20px;
+    }
+    #email {
+        clear: both;
+        border-left: 1px solid green;
+        padding-left: 5px;
+    }
+    #email, #socialMediaLinks {
+        margin-top: 20px;
+        float: right;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #videoSpace {
+        margin-left: 10px;
+    }
+
+    #ourSchools{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+    }
+
+    #ourFacilities ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #quickLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #faq {
+        width: 100%;
+        margin-bottom: 1px;
+
+    }
+}
+
+/*subSideBar*/
+ .subSideBar {
+     width: auto;
+     padding: 10px;
+     margin-top: 20px;
+ }
+
+ .subSideBar a {
+     display: inline-block;
+     width: auto;
+     height: 100%;
+     font-size: 1.2em;
+     background-color: green;
+     color: white;
+     padding: 10px 10px;     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     text-decoration: none;
+ }
+
+ #active, .subSideBar a:hover {
+    background-color: white;
+    color: green;
+    border-bottom: 1px solid green;
+}

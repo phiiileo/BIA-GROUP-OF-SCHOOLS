@@ -1,0 +1,39 @@
+#phead {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+#phead img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+}
+
+#phead p {
+    position: absolute;
+    right: 270px;
+    bottom: 0px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#principalSpeech {
+    padding: 10px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4em;
+}
+
+#principalSpeech h3 {
+    color: green;
+    font-size: 1.5em;
+    text-align: center ;
+}
+
+iframe {
+    height: 50vh;
+}
